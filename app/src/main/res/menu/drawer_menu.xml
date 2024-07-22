@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/nav_selectoffice"
+        android:title="Select Office"
+        android:icon="@drawable/baseline_maps_home_work_24"
+        android:iconTint="@color/black"/>
+
+    <item
+        android:id="@+id/nav_gpsmarked"
+        android:title="GPS Marked Today"
+        android:icon="@drawable/baseline_push_pin_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_dsbbranch"
+        android:title="DSP Branch"
+        android:icon="@drawable/baseline_push_pin_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_contectlist"
+        android:title="DSP Contact List"
+        android:icon="@drawable/baseline_phone_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_salaryslip"
+        android:title="Salary Slip"
+        android:icon="@drawable/baseline_attach_money_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_pams"
+        android:title="PAMS"
+        android:icon="@drawable/baseline_analytics_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_pfund"
+        android:title="Provident Fund"
+        android:icon="@drawable/baseline_monetization_on_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_changepass"
+        android:title="Change Password"
+        android:icon="@drawable/baseline_key_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/baseline_logout"
+        android:iconTint="@color/black"/>
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">DspAttendenceApp</string>
+    <string name="dsp_m_i_s">DSP M.I.S</string>
+    <string name="enter_user_id">Enter user id</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="welcome_back_10124008">Welcome Back: 10124008</string>
+    <string name="alter">پاس ورڈ کا اشتراک آپ کی معلومات اور \n اجازت کو شیئر کرنے کے مترادف ہے۔\n
+لہذا اپنے پاس ورڈ کی اہمیت کو جانیں اور \n اسے محفوظ اور خفیہ رکھیں۔</string>
+    <string name="home">Home Fragment</string>
+    <string name="selectoffice">Select Office</string>
+    <string name="gpsmarkedtoday">GPS Marked Today</string>
+    <string name="dspbranch">DSP Branches</string>
+    <string name="dspcontactlist">DSP Contact List</string>
+    <string name="salaryslip">Salary Slip</string>
+    <string name="pams">PAMS</string>
+    <string name="providentfund">Provident Fund</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="changepass">Change Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="_2024_damen_support_programme">2024 Damen Support Programme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_attend_record">My Attendance Record</string>
+    <string name="date">Date</string>
+    <string name="in">IN</string>
+    <string name="out">OUT</string>
+    <string name="my_attendence">My Attendence</string>
+    <string name="desktop_mis">Desktop MIS</string>
+    <string name="my_salary_slip">My Salary Slip</string>
+    <string name="my_pams">My PAMS</string>
+    <string name="my_provident_fund_net_balance">My Provident Fund Net Balance</string>
+</resources>

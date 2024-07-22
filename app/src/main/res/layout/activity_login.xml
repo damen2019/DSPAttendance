@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activites.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/dsplogo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dsp_m_i_s"
+        android:layout_below="@id/logo"
+        android:id="@+id/tvmis"
+        android:textStyle="bold"
+        android:textColor="@color/themecolor"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmis"
+        android:padding="14dp"
+        android:textColorHint="@color/text_light"
+        android:inputType="number"
+        android:id="@+id/etuserid"
+        android:hint="@string/enter_user_id"
+        android:textColor="@color/black"
+        android:layout_marginTop="25dp"
+        android:textSize="14sp"
+        android:background="@drawable/edittext_border"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etuserid"
+        android:padding="14dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/text_light"
+        android:id="@+id/etpassword"
+        android:hint="@string/enter_password"
+        android:textColor="@color/black"
+        android:layout_marginTop="22dp"
+        android:textSize="14sp"
+        android:background="@drawable/edittext_border"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etpassword"
+            android:id="@+id/rel">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvlogin"
+                android:text="@string/login"
+                android:padding="14dp"
+                android:background="@drawable/login_button_bg"
+                android:layout_marginTop="22dp"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvadduser"
+                android:text="Add User"
+                android:padding="14dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                android:background="@drawable/login_button_bg"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/tvlogin"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvwelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel"
+            android:layout_marginTop="22dp"
+            android:text="@string/welcome_back_10124008"
+            android:textAlignment="center"
+            android:textColor="@color/dark_green"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvalter"
+        android:text="@string/alter"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:animation="@anim/fade_in"
+        android:textColor="@color/dark_red"
+        android:layout_below="@id/tvwelcome"/>
+
+    </RelativeLayout>
+</ScrollView>

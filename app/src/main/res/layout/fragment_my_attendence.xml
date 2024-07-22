@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".fragments.MyAttendenceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="My Attendence"
+            android:textColor="@color/themecolor"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvdoffice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvhead"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvdoffice"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginTop="15dp"
+            android:text="Thu, 16 May 2024,"
+            android:textColor="@color/themecolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextClock
+            android:id="@+id/realTimeClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/tvdate"
+            android:format12Hour="hh:mm:ss a"
+            android:format24Hour="HH:mm:ss a"
+            android:textColor="@color/themecolor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvdate"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp"
+            android:id="@+id/liimage"
+            android:layout_below="@+id/tvdistance">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/clockin"
+                    android:clickable="false"
+                    android:src="@drawable/clockin"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/clockingray"
+                    android:visibility="gone"
+                    android:src="@drawable/clockingray"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/clockout"
+                    android:clickable="false"
+                    android:src="@drawable/clockout"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/clockoutgray"
+                    android:visibility="gone"
+                    android:src="@drawable/clockoutgray"
+                    android:layout_weight="1"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_attend_record"
+            android:layout_below="@id/liimage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvrecord"
+            android:visibility="gone"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabGravity="fill"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_below="@id/tvrecord"
+            app:tabIndicatorColor="@color/themecolor"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/themecolor"
+            app:tabTextColor="@color/gray" />
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/myViewPager"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tab_layout"
+            android:layout_height="400dp" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.dsp.dspattendenceapp.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_mysalary"
+            app:destination="@id/navigation_mysalary" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_pf"
+            app:destination="@id/navigation_pf" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_pams"
+            app:destination="@id/navigation_pams" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_attendance"
+            app:destination="@id/navigation_attendance" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_attendance"
+        android:name="com.dsp.dspattendenceapp.fragments.MyAttendenceFragment"
+        android:label="@string/my_attendence"
+        tools:layout="@layout/fragment_my_attendence" />
+    <fragment
+        android:id="@+id/navigation_mysalary"
+        android:name="com.dsp.dspattendenceapp.fragments.SalarySlipFragment"
+        android:label="@string/my_salary_slip"
+        tools:layout="@layout/fragment_salary_slip" />
+    <fragment
+        android:id="@+id/navigation_pams"
+        android:name="com.dsp.dspattendenceapp.fragments.PamsFragment"
+        android:label="@string/my_pams"
+        tools:layout="@layout/fragment_pams" />
+    <fragment
+        android:id="@+id/navigation_pf"
+        android:name="com.dsp.dspattendenceapp.fragments.ProvidentFundFragment"
+        android:label="@string/my_provident_fund_net_balance"
+        tools:layout="@layout/fragment_provident_fund" />
+
+
+</navigation>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context=".fragments.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="22dp"
+        android:id="@+id/li1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/themecolor"
+            android:text="@string/welcome"
+            android:textSize="25dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="12dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cirle_bg"
+                    android:id="@+id/tvinint"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/themecolor"
+                    android:padding="23dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faraz Ahmad"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="19sp"
+                    android:id="@+id/tvname"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/tvinint"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Developer"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:id="@+id/designation"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tvname"
+                    android:layout_toEndOf="@id/tvinint"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="101: Head Office"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="10sp"
+                    android:id="@+id/officeid"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/designation"
+                    android:layout_toEndOf="@id/tvinint"/>
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/rvoption"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
