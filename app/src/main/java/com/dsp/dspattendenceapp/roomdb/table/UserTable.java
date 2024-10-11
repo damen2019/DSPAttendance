@@ -108,10 +108,16 @@ public class UserTable {
     @ColumnInfo(name = "ProductPerm")
     private Integer ProductPerm;
 
+    @ColumnInfo(name = "DeviceIMEI")
+    private String DeviceIMEI;
+
+    @ColumnInfo(name = "IsAuthorized")
+    private Integer IsAuthorized;
+
     public UserTable() {
     }
 
-    public UserTable(String empID, String fullName, String username, String userPass, String myTheme, String deptName, String desigName, String officeName, Integer officeID, Integer deptID, String roleName, Integer userRole, Integer positionID, Integer positionLvl, Integer rankNum, String positionName, Integer officeLevel, Integer mainOffice, String mainOfficeName, Integer LTS_AoID, Integer LTS_FoID, Integer positionRank, String PWDChangeDate, Integer isIslamic, String FYStart, String FYEnd, String finYear, String ofcID, String parentOfcID, String regionCode, Integer isEnt, String latLon, Integer isWFH, Integer productPerm) {
+    public UserTable(String empID, String fullName, String username, String userPass, String myTheme, String deptName, String desigName, String officeName, Integer officeID, Integer deptID, String roleName, Integer userRole, Integer positionID, Integer positionLvl, Integer rankNum, String positionName, Integer officeLevel, Integer mainOffice, String mainOfficeName, Integer LTS_AoID, Integer LTS_FoID, Integer positionRank, String PWDChangeDate, Integer isIslamic, String FYStart, String FYEnd, String finYear, String ofcID, String parentOfcID, String regionCode, Integer isEnt, String latLon, Integer isWFH, Integer productPerm,String deviceIMEI,Integer isAuthorized) {
         EmpID = empID;
         FullName = fullName;
         Username = username;
@@ -146,6 +152,24 @@ public class UserTable {
         LatLon = latLon;
         IsWFH = isWFH;
         ProductPerm = productPerm;
+        DeviceIMEI = deviceIMEI;
+        IsAuthorized = isAuthorized;
+    }
+
+    public String getDeviceIMEI() {
+        return DeviceIMEI;
+    }
+
+    public void setDeviceIMEI(String deviceIMEI) {
+        DeviceIMEI = deviceIMEI;
+    }
+
+    public Integer getIsAuthorized() {
+        return IsAuthorized;
+    }
+
+    public void setIsAuthorized(Integer isAuthorized) {
+        IsAuthorized = isAuthorized;
     }
 
     public String getEmpID() {

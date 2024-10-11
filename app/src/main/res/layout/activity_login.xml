@@ -101,10 +101,10 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/rel"
             android:layout_marginTop="22dp"
-            android:text="@string/welcome_back_10124008"
             android:textAlignment="center"
             android:textColor="@color/dark_green"
             android:textSize="12sp"
+            android:visibility="invisible"
             android:textStyle="bold" />
 
         <TextView

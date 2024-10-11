@@ -3,14 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".fragments.ProvidentFundFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:text="@string/providentfund" />
+        android:text="@string/my_provident_found_history"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:id="@+id/tvpfhistory"
+        android:textColor="@color/themecolor"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvpfhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_below="@+id/tvpfhistory"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tvnoShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_record_found"
+        android:textColor="@color/themecolor"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:text="@string/note_this_report_calculate_pf_any_adjustment_and_loan_installment_this_is_net_pf_balance_report"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

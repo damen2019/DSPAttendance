@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:id="@+id/relmain"
+    android:background="@color/white"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Name"
+        android:background="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:id="@+id/tvvnamee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="12sp"
+        android:background="@color/white"
+        android:layout_below="@+id/tvvnamee"
+        android:textColor="@color/text_light"
+        android:id="@+id/tvvname"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvvname"
+        android:layout_marginTop="2dp"
+        android:text="IP"
+        android:background="@color/white"
+        android:textColor="@color/text_light"
+        android:textSize="12sp"
+        android:id="@+id/tvip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvstatus"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvip"
+        android:layout_marginTop="8dp"
+        android:background="@color/text_light"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "598952767284",
+    "project_id": "dsp-app-15127",
+    "storage_bucket": "dsp-app-15127.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598952767284:android:38ebf2277d9bdff1467f61",
+        "android_client_info": {
+          "package_name": "com.dsp.dspattendenceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD46aV5p2WqCw56uF-bgjMVJ66WiTLjkKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

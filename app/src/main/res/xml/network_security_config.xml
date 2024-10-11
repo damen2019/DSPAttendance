@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">s1test.damensp.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/s1test"/>
+        </trust-anchors>
+    </domain-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mis.damensp.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/mis"/>
+        </trust-anchors>
+    </domain-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">damensp.com</domain>
+        <trust-anchors>
+            <certificates src="@raw/dspapi"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

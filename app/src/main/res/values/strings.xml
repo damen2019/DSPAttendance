@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DspAttendenceApp</string>
+    <string name="app_name">DspApp</string>
     <string name="dsp_m_i_s">DSP M.I.S</string>
     <string name="enter_user_id">Enter user id</string>
     <string name="enter_password">Enter password</string>
@@ -15,11 +15,9 @@
     <string name="salaryslip">Salary Slip</string>
     <string name="pams">PAMS</string>
     <string name="providentfund">Provident Fund</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="changepass">Change Password</string>
     <string name="welcome">Welcome</string>
     <string name="_2024_damen_support_programme">2024 Damen Support Programme</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_attend_record">My Attendance Record</string>
     <string name="date">Date</string>
@@ -30,4 +28,45 @@
     <string name="my_salary_slip">My Salary Slip</string>
     <string name="my_pams">My PAMS</string>
     <string name="my_provident_fund_net_balance">My Provident Fund Net Balance</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="do_you_want_to_logout">Do you want to logout!</string>
+    <string name="yes_logout">Yes,Logout!</string>
+    <string name="cancel">Cancel</string>
+    <string name="testimage">TestImage</string>
+    <string name="please_connect_admin_you_are_not_authorized">Please connect admin, you are not authorized!</string>
+    <string name="invalid_user_id_or_password">Invalid user id or password!</string>
+    <string name="device_id_not_exist_now_inserting_device_id_please_connect_admin_and_retry">Device id not exist, now inserting device id. Please connect admin and retry</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="device_id_not_matched_with_your_device_id">Device id not matched with your Device id!</string>
+    <string name="please_connect_admin_your_device_id_not_matched_with_this_device">Please connect admin, your device id not matched with this device!</string>
+    <string name="local_is_not_matched">Local is not matched!</string>
+    <string name="alert">Alert!</string>
+    <string name="ok">ok</string>
+    <string name="press_to_exit">Press to exit</string>
+    <string name="please_check_your_internet_connection_your_user_is_not_availible_locally">Please check your internet connection, Your User is not Availible locally.</string>
+    <string name="no_record_found">No Record Found!</string>
+    <string name="please_enter_user_id">Please enter user id!</string>
+    <string name="please_enter_password">Please enter password!</string>
+    <string name="employee_is_found_please_check_your_credentials">Employee is not found.Please check your credentials!</string>
+    <string name="please_remove_vpn_connection_and_fake_gps">Please remove vpn connection \n and fake gps!</string>
+    <string name="select_year_month">Select Year/Month:</string>
+    <string name="my_provident_found_history">My Provident Found History</string>
+    <string name="note_this_report_calculate_pf_any_adjustment_and_loan_installment_this_is_net_pf_balance_report">Note: This report calculate pf,any adjustment and loan installment.This is net pf balance report.</string>
+    <string name="amount">Amount</string>
+    <string name="year_month">Year-Month</string>
+    <string name="please_remove_vpn_connection">Please remove vpn connection!</string>
+    <string name="mis">MIS</string>
+    <string name="please_check_your_distance_and_try_again_thanks">Please check your distance and try again thanks!</string>
+    <string name="please_check_your_internet_connectivity">Please check your internet connectivity!</string>
+    <string name="detect_office"><u>Detect Office: </u></string>
+    <string name="new_password_must_be_alpha_numeric_abcd1234_password_minimum_length_is_8_characters">New password must be alpha numeric (abcd1234). Password minimum length is 8 characters.</string>
+    <string name="change_password">Change Password</string>
+    <string name="re_type_new_password">Re-Type New Password</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="office">Office :</string>
+    <string name="thu_16_may_2024">Thu, 16 May 2024,</string>
+    <string name="something_went_wrong_please_close_the_app_and_open_again_thank">Something went wrong please close the app and open again, Thank.</string>
+    <string name="your_attendance_has_been_successfully_marked">Your attendance has been successfully marked.</string>
+    <string name="success">Success</string>
 </resources>

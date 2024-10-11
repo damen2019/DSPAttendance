@@ -25,7 +25,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
-public class SignUpActivity extends AppCompatActivity {
+public class SignUpActivity extends BaseActivity {
     private ActivitySignUpBinding binding;
     private Uri uri;
 

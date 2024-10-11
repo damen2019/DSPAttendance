@@ -85,7 +85,7 @@
             app:itemTextColor="@color/black"
             app:itemIconTint="@color/black"
             app:itemHorizontalPadding="18dp"
-            app:itemVerticalPadding="16dp"
+            app:itemVerticalPadding="14dp"
             app:itemBackground="@drawable/menu_item_divider"
             android:background="@drawable/login_button_bg"
             app:menu="@menu/drawer_menu"/>

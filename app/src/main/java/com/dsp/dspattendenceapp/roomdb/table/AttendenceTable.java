@@ -7,107 +7,70 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "attendencetable")
 public class AttendenceTable {
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
-    Integer id;
-    @ColumnInfo(name = "empID")
-    String empID;
-    @ColumnInfo(name = "name")
-    String name;
-    @ColumnInfo(name = "location")
-    String location;
-    @ColumnInfo(name = "devicId")
 
-    String devicId;
-    @ColumnInfo(name = "date")
-    String date;
-    @ColumnInfo(name = "clockin")
-    String clockin;
-    @ColumnInfo(name = "clockout")
-    String clockout;
-    @ColumnInfo(name = "status")
-    String status;
+//    @ColumnInfo(name = "EmpID")
+//    String EmpID;
+//    @ColumnInfo(name = "FullName")
+//    String FullName;
+//    @ColumnInfo(name = "DesigName")
+//    String DesigName;
+//    @ColumnInfo(name = "OfficeName")
+//    String OfficeName;
+    @ColumnInfo(name = "IN")
+    @NonNull
+    @PrimaryKey()
+    String IN;
+    @ColumnInfo(name = "OUT")
+    String OUT;
+    @ColumnInfo(name = "DTAttend")
+    String DTAttend;
+//    @ColumnInfo(name = "OfficeID_IN")
+//    Integer OfficeID_IN;
+//
+//    @ColumnInfo(name = "OfficeIDName_IN")
+//    String OfficeIDName_IN;
+//
+//    @ColumnInfo(name = "OfficeID_OUT")
+//    Integer OfficeID_OUT;
+//
+//    @ColumnInfo(name = "OfficeIDName_OUT")
+//    String OfficeIDName_OUT;
 
-    public AttendenceTable(String empID, String name, String location, String devicId, String date, String clockin, String clockout, String status) {
-        this.empID = empID;
-        this.name = name;
-        this.location = location;
-        this.devicId = devicId;
-        this.date = date;
-        this.clockin = clockin;
-        this.clockout = clockout;
-        this.status = status;
+
+
+    public AttendenceTable() {
     }
 
-    public Integer getId() {
-        return id;
+    public AttendenceTable(@NonNull String IN, String OUT, String DTAttend) {
+        this.IN = IN;
+        this.OUT = OUT;
+        this.DTAttend = DTAttend;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+
+    @NonNull
+    public String getIN() {
+        return IN;
     }
 
-    public String getEmpID() {
-        return empID;
+    public void setIN(@NonNull String IN) {
+        this.IN = IN;
     }
 
-    public void setEmpID(String empID) {
-        this.empID = empID;
+    public String getOUT() {
+        return OUT;
     }
 
-    public String getName() {
-        return name;
+    public void setOUT(String OUT) {
+        this.OUT = OUT;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getDTAttend() {
+        return DTAttend;
     }
 
-    public String getLocation() {
-        return location;
+    public void setDTAttend(String DTAttend) {
+        this.DTAttend = DTAttend;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public String getDevicId() {
-        return devicId;
-    }
-
-    public void setDevicId(String devicId) {
-        this.devicId = devicId;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public String getClockin() {
-        return clockin;
-    }
-
-    public void setClockin(String clockin) {
-        this.clockin = clockin;
-    }
-
-    public String getClockout() {
-        return clockout;
-    }
-
-    public void setClockout(String clockout) {
-        this.clockout = clockout;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
 }

@@ -7,26 +7,34 @@
         android:title="Home"
         android:icon="@drawable/baseline_home_24"
         android:iconTint="@color/black"/>
-
+    <item
+        android:id="@+id/nav_switch"
+        android:title="Switch"
+        android:icon="@drawable/baseline_maps_home_work_24"
+        android:iconTint="@color/black"/>
     <item
         android:id="@+id/nav_selectoffice"
         android:title="Select Office"
+        android:visible="false"
         android:icon="@drawable/baseline_maps_home_work_24"
         android:iconTint="@color/black"/>
 
     <item
         android:id="@+id/nav_gpsmarked"
         android:title="GPS Marked Today"
+        android:visible="false"
         android:icon="@drawable/baseline_push_pin_24"
         android:iconTint="@color/black"/>
     <item
         android:id="@+id/nav_dsbbranch"
         android:title="DSP Branch"
+        android:visible="false"
         android:icon="@drawable/baseline_push_pin_24"
         android:iconTint="@color/black"/>
     <item
         android:id="@+id/nav_contectlist"
         android:title="DSP Contact List"
+        android:visible="false"
         android:icon="@drawable/baseline_phone_24"
         android:iconTint="@color/black"/>
     <item
@@ -37,6 +45,7 @@
     <item
         android:id="@+id/nav_pams"
         android:title="PAMS"
+        android:visible="false"
         android:icon="@drawable/baseline_analytics_24"
         android:iconTint="@color/black"/>
     <item
@@ -48,6 +57,11 @@
         android:id="@+id/nav_changepass"
         android:title="Change Password"
         android:icon="@drawable/baseline_key_24"
+        android:iconTint="@color/black"/>
+    <item
+        android:id="@+id/nav_setting"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
         android:iconTint="@color/black"/>
     <item
         android:id="@+id/nav_logout"

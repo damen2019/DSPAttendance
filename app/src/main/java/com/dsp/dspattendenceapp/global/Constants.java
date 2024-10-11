@@ -47,7 +47,11 @@ public class Constants {
      **************************************************/
     public static final String BASE_URL_GOOGLE = "https://maps.googleapis.com/maps/"; // test server
 
-    public static final String BASE_URL = "https://s1test.damensp.com:2024/api/";
+    // test sever
+//    public static final String BASE_URL = "https://s1test.damensp.com/DSPAPI/Employee/";
+    // live server
+    public static final String BASE_URL = "https://mis.damensp.com/DSPApi/Employee/";
+    public static final String BASE_URL_SERVER = "https://damensp.com/MIS/";
     public static final String PROFILE_IMAGES = BASE_URL + "profileImage/";
     public static final String IMAGES_URL = BASE_URL + "uploadImages/";
     public static final String termsURL = BASE_URL + "terms";

@@ -31,7 +31,7 @@ import com.dsp.dspattendenceapp.roomdb.table.UserTable;
 import com.dsp.dspattendenceapp.utills.Preferences;
 import com.dsp.dspattendenceapp.utills.Utillity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
     private static final int REQUEST_CODE = 1212;
     ActivityMainBinding binding;
     private String imei = "";

@@ -14,7 +14,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
+
 
 import androidx.room.Room;
 
@@ -88,18 +88,20 @@ public class MyUserDataService extends IntentService implements ResponseHandler 
                 UserTable userTable = (UserTable) Utillity.convertObject(object.toString(), UserTable.class);
                 UpdateUserLocally(userTable);
             } catch (JSONException e) {
-                Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Utillity.openErrorDialog(activity,e.getMessage());
             }
         }
     }
 
     private void UpdateUserLocally(UserTable userTable) {
+
         userDao.updateUser(userTable.getEmpID(),userTable.getFullName(),userTable.getUsername(),userTable.getUserPass(),userTable.getMyTheme(),userTable.getDeptName(),userTable.getDesigName(),userTable.getOfficeName(),userTable.getOfficeID(),userTable.getDeptID(),userTable.getRoleName(),userTable.getUserRole(),userTable.getPositionID(),userTable.getPositionLvl(),userTable.getRankNum(),userTable.getPositionName(),userTable.getOfficeLevel(),userTable.getMainOffice(),userTable.getMainOfficeName(),userTable.getLTS_AoID(),userTable.getLTS_FoID(),userTable.getPositionRank(),userTable.getPWDChangeDate(),userTable.getIsIslamic(),userTable.getFYStart(),userTable.getFYEnd(),userTable.getFinYear(),userTable.getOfcID(),userTable.getParentOfcID(),userTable.getRegionCode(),userTable.getIsEnt(),userTable.getLatLon(),userTable.getIsWFH(),userTable.getProductPerm());
     }
 
     @Override
     public void onFailure(Throwable t, int reqCode) {
-        Toast.makeText(this, t.getMessage(), Toast.LENGTH_SHORT).show();
+        Utillity.openErrorDialog(activity,t.getMessage());
     }
+
 
 }

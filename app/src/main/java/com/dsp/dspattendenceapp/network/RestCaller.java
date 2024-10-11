@@ -26,8 +26,8 @@ public class RestCaller {
             this.handler = handler;
             callApi(call);
         } else {
-            Throwable throwable = new Throwable("No Internet Connection");
-            handler.onFailure(throwable,REQUEST_CODE);
+            //Throwable throwable = new Throwable("No Internet Connection");
+            //handler.onFailure(throwable,REQUEST_CODE);
             //Toast.makeText(context, "No Internet Connection", Toast.LENGTH_SHORT).show();
         }
 
